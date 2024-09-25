@@ -27,6 +27,7 @@ div.main {
     padding: 1em;
     gap: 1em;
     grid-template-columns: repeat(4, 1fr);
+    width: 20em;
 
     /* grid-template-areas: 
         "textSpace textSpace textSpace textSpace"
@@ -37,7 +38,12 @@ div.main {
     .textSpace {
         grid-column: 1/5;
         text-align: end;
-        margin: 1em;
+        background-color: rgb(124, 112, 97);
+        aspect-ratio: 5/1;
+        border-radius: 10px;
+        padding: 0.5em;
+        font-size: 22px;
+        align-content: center;
     }
 
     .clear {
@@ -53,14 +59,14 @@ div.main {
     button {
         all: unset;
         background-color: rgb(150, 139, 126);
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         text-align: center;
+        aspect-ratio: 2/1;
         
 
         &:not(.clear, .clearAll) {
             aspect-ratio: 1;
-            width: 1em;
         }
     }
 }
