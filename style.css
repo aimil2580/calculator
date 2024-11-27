@@ -29,12 +29,6 @@ div.main {
     grid-template-columns: repeat(4, 1fr);
     width: 20em;
 
-    /* grid-template-areas: 
-        "textSpace textSpace textSpace textSpace"
-        "7 8 9 add"
-        "4 5 6 subtract"
-        "1 2 3 multi"
-        "0 dot sum clear"; */
     .textSpace {
         grid-column: 1/5;
         text-align: end;
@@ -63,10 +57,22 @@ div.main {
         cursor: pointer;
         text-align: center;
         aspect-ratio: 2/1;
+        border-bottom: 4px solid #241b11;
+        
+        transition:border-bottom 0.3s, border-radius 0.5s, background-color 0.2s;
         
 
         &:not(.clear, .clearAll) {
             aspect-ratio: 1;
         }
+    }
+    button:hover{
+        border-bottom: 0;
+        border-radius: 50%;
+        border: #241b11 solid 2px;
+    }
+
+    button:active{
+        background-color: #241b11;
     }
 }
