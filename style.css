@@ -38,9 +38,10 @@ div.main {
         padding: 0.5em;
         font-size: 22px;
         align-content: center;
+        overflow-x: auto;
     }
 
-    .clear {
+    .del {
         grid-column: 1/3;
         grid-row: 2;
     }
@@ -62,7 +63,7 @@ div.main {
         transition:border-bottom 0.3s, border-radius 0.5s, background-color 0.2s;
         
 
-        &:not(.clear, .clearAll) {
+        &:not(.del, .clearAll) {
             aspect-ratio: 1;
         }
     }
