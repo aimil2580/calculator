@@ -69,7 +69,7 @@ div.main {
     }
     button:hover{
         border-bottom: 0;
-        border-radius: 50%;
+        border-radius: 2em;
         border: #241b11 solid 2px;
     }
 
