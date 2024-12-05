@@ -58,9 +58,10 @@ div.main {
         cursor: pointer;
         text-align: center;
         aspect-ratio: 2/1;
-        border-bottom: 4px solid #241b11;
-        
-        transition:border-bottom 0.3s, border-radius 0.5s, background-color 0.2s;
+        /* border-bottom: 4px solid #241b11; */
+        box-shadow: 4px 4px #241b11;
+        transition:border-radius 0.5s, background-color 0.2s, 
+        box-shadow 0.5s;
         
 
         &:not(.del, .clearAll) {
@@ -70,7 +71,8 @@ div.main {
     button:hover{
         border-bottom: 0;
         border-radius: 2em;
-        border: #241b11 solid 2px;
+        outline: #241b11 solid 2px;
+        box-shadow: none;
     }
 
     button:active{
