@@ -3,7 +3,8 @@
 }
 
 html {
-    background-color: antiquewhite;
+    background: linear-gradient(78deg,rgba(227, 201, 170, 1) 40%, rgba(84, 85, 79, 1) 95%); 
+    background-attachment: fixed;
     font-family: sans-serif;
 }
 
@@ -17,6 +18,7 @@ h1 {
 .wrapper {
     display: flex;
     justify-content: center;
+    background-color:none;
 }
 
 div.main {
